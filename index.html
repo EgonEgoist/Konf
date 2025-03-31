@@ -10,30 +10,50 @@
             text-align: center;
             background: url('Hugo.jpg') no-repeat center center/cover;
             padding: 20px;
+            margin: 0;
         }
         .invitation {
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.9);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-            max-width: 400px;
-            margin-top: 500px;
-
+            max-width: 90%;
+            margin: 10vh auto;
+            box-sizing: border-box;
         }
         h1 {
-            color: #000000;
+            color: #000;
+            font-size: 1.8em;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
         }
         .btn {
             display: inline-block;
             margin-top: 20px;
-            padding: 10px 20px;
-            background: #000000;
+            padding: 12px 20px;
+            background: #000;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 1.2em;
         }
-       
+        @media (max-width: 600px) {
+            .invitation {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .btn {
+                font-size: 1em;
+                padding: 10px 15px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -44,9 +64,8 @@
         <p>Konfirmationen starter kl 11:00 i Hasseris Kirke (Kun nærmeste familie)</p>
         <p><strong>Sted:</strong> Fælleshuset Hasselhøj 3, 9000 Aalborg</p>
         <p><strong>Tid:</strong> Kl. 13:00</p>
-        <p>Jeg håber, du kan komme og være med til at fejre en fantastisk
-        dag!</p>
-        <a class="btn">Svar udbydes på SMS :)</a>
+        <p>Jeg håber, du kan komme og være med til at fejre en fantastisk dag!</p>
+        <a class="btn" href="sms:">Svar udbydes på SMS :)</a>
     </div>
 </body>
 </html>
